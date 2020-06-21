@@ -7,3 +7,5 @@ find_library(MHTD NAMES microhttpd REQUIRED)
 find_library(SQLite3 NAMES sqlite3 REQUIRED)
 
 add_executable(todo_http main.c)
+
+install(TARGETS todo_http)
